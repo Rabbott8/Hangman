@@ -8,6 +8,7 @@ import javax.swing.*;
  * @author (your name) 
  * @version (a version number)
  */
+<<<<<<< HEAD
 public class hangman extends JFrame
 {
     // instance variables - replace the example below with your own
@@ -59,6 +60,15 @@ public class hangman extends JFrame
         // is replaced by another page or before JApplet is destroyed 
     }
 
+=======
+public class hangman extends JApplet
+{
+   
+   
+  
+
+    
+>>>>>>> 18280c4899c349e683471f301a94ea889435642e
     /**
      * Paint method for applet.
      * 
@@ -67,6 +77,7 @@ public class hangman extends JFrame
     public void paint(Graphics g)
     {
         // simple text displayed on applet
+<<<<<<< HEAD
         g.setColor(Color.green);
         g.fillRect(335, 20, 18, 180);
         g.fillRect(309,184,70,16);
@@ -81,6 +92,25 @@ public class hangman extends JFrame
     public void destroy()
     {
         // provide code to be run when JApplet is about to be destroyed.
+=======
+        
+        
+        g.setColor(Color.blue);
+        g.fillRect(50,300,40,10);
+        g.fillRect(75,70,5,232);
+        g.fillRect(75,70,75,5);
+        g.fillRect(125,70,5,50);
+        
+        
+        
+        g.setColor(Color.red);
+        g.fillOval(100,100,50,50);
+        g.fillRect(125,125,3,100);
+        g.drawLine(125,175,160,150);
+        g.drawLine(125,175,90,150);
+        g.drawLine(125,300,160,335);
+        g.drawLine(125,200,265,335);
+>>>>>>> 18280c4899c349e683471f301a94ea889435642e
     }
 
 
@@ -98,6 +128,7 @@ public class hangman extends JFrame
     }
 
 
+<<<<<<< HEAD
     /**
      * Returns parameter information about this JApplet. 
      * Returns information about the parameters than are understood by this JApplet.
@@ -118,4 +149,6 @@ public class hangman extends JFrame
         };
         return paramInfo;
     }
+=======
+>>>>>>> 18280c4899c349e683471f301a94ea889435642e
 }
