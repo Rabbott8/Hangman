@@ -38,8 +38,8 @@ public class hangman extends JApplet
         g.fillRect(125,125,3,100);
         g.drawLine(125,175,160,150);
         g.drawLine(125,175,90,150);
-        g.drawLine(125,300,160,335);
-        g.drawLine(125,200,265,335);
+        g.drawLine(126,223,90,250);
+        g.drawLine(126,223,160,250);
     }
 
 
