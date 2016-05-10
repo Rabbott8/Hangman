@@ -8,8 +8,8 @@ import javax.swing.*;
  * @author (your name) 
  * @version (a version number)
  */
-<<<<<<< HEAD
-public class hangman extends JFrame
+///<<<<<<< HEAD
+public class hangman extends JApplet
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -60,7 +60,7 @@ public class hangman extends JFrame
         // is replaced by another page or before JApplet is destroyed 
     }
 
-=======
+//=======
 public class hangman extends JApplet
 {
    
@@ -68,7 +68,7 @@ public class hangman extends JApplet
   
 
     
->>>>>>> 18280c4899c349e683471f301a94ea889435642e
+//>>>>>>> 18280c4899c349e683471f301a94ea889435642e
     /**
      * Paint method for applet.
      * 
@@ -77,25 +77,13 @@ public class hangman extends JApplet
     public void paint(Graphics g)
     {
         // simple text displayed on applet
-<<<<<<< HEAD
+//<<<<<<< HEAD
         g.setColor(Color.green);
         g.fillRect(335, 20, 18, 180);
         g.fillRect(309,184,70,16);
         
-    }
-
-    /**
-     * Called by the browser or applet viewer to inform this JApplet that it
-     * is being reclaimed and that it should destroy any resources that it
-     * has allocated. The stop method will always be called before destroy. 
-     */
-    public void destroy()
-    {
-        // provide code to be run when JApplet is about to be destroyed.
-=======
         
-        
-        g.setColor(Color.blue);
+         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
         g.fillRect(75,70,75,5);
@@ -110,7 +98,21 @@ public class hangman extends JApplet
         g.drawLine(125,175,90,150);
         g.drawLine(125,300,160,335);
         g.drawLine(125,200,265,335);
->>>>>>> 18280c4899c349e683471f301a94ea889435642e
+    }
+
+    /**
+     * Called by the browser or applet viewer to inform this JApplet that it
+     * is being reclaimed and that it should destroy any resources that it
+     * has allocated. The stop method will always be called before destroy. 
+     */
+    public void destroy()
+    {
+        // provide code to be run when JApplet is about to be destroyed.
+//=======
+        
+        
+       
+//
     }
 
 
@@ -128,7 +130,7 @@ public class hangman extends JApplet
     }
 
 
-<<<<<<< HEAD
+//
     /**
      * Returns parameter information about this JApplet. 
      * Returns information about the parameters than are understood by this JApplet.
@@ -148,7 +150,7 @@ public class hangman extends JApplet
                  {"images",   "url",     "description of third parameter"}
         };
         return paramInfo;
-    }
-=======
->>>>>>> 18280c4899c349e683471f301a94ea889435642e
-}
+    }}}
+//}
+//
+//
