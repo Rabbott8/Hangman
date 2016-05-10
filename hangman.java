@@ -61,7 +61,7 @@ public class hangman extends JApplet
     }
 
 //=======
-public class hangman extends JApplet
+public class hAngman extends JApplet
 {
    
    
