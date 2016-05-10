@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author rabbott8
@@ -16,7 +17,21 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
     }
-
+    
+    /**
+     * Paint method for applet.
+     * 
+     * @param  g   the Graphics object for this applet
+     */
+    public void paint(Graphics g)
+    {
+        // simple text displayed on applet
+        g.setColor(Color.green);
+        g.fillRect(335, 20, 18, 180);
+        g.fillRect(309,184,70,16);
+        
+    }
+    
     /**
     * This method is called from within the constructor to initialize the form.
     * WARNING: Do NOT modify this code. The content of this method is always
@@ -309,6 +324,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     new NewJFrame().setVisible(true);
                 }
             });
+       
     }
 
     // Variables declaration - do not modify                     
