@@ -8,13 +8,18 @@ import java.util.*;
  */
 public class SecretWord
 {
-    String s;
+    ArrayList<String> letters = new ArrayList<String>();
+    List<Boolean> m;
     /**
      * Constructor for objects of class SecretWord
      */
     public SecretWord() throws FileNotFoundException
     {
-        s = FileReader1.choose(new File("README.TXT"));
+        String s = FileReader1.choose(new File("README.TXT"));
+        for (int i = 0; i<s.length();i++)
+        {
+            letters.add(s.substring(i,i+1));
+        }
     }
 
     /**
@@ -23,8 +28,8 @@ public class SecretWord
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public String toString()
     {
-        return y;
+        return "";
     }
 }
