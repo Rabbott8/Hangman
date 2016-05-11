@@ -20,7 +20,7 @@ public class fgh
     {
         NewJFrame.main(args);
         hangman c = new hangman();
-        c.paint(g);
+        
     }
     }
 
