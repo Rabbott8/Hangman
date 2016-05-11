@@ -1,4 +1,5 @@
-
+import java.io.*;
+import java.util.*;
 /**
  * Write a description of class SecretWord here.
  * 
@@ -7,16 +8,13 @@
  */
 public class SecretWord
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    String s;
     /**
      * Constructor for objects of class SecretWord
      */
-    public SecretWord()
+    public SecretWord() throws FileNotFoundException
     {
-        // initialise instance variables
-        x = 0;
+        s = FileReader1.choose(new File("README.TXT"));
     }
 
     /**
@@ -27,7 +25,6 @@ public class SecretWord
      */
     public int sampleMethod(int y)
     {
-        // put your code here
-        return x + y;
+        return y;
     }
 }
