@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class xD
+public class fgh
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -23,6 +23,8 @@ public class xD
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
         hangman c = new hangman();
+        
+        SecretWord w = new SecretWord();
       
     }
     }
