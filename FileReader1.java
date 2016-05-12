@@ -2,6 +2,15 @@ import java.io.*;
 import java.util.*;
 
 public class FileReader1 {
+
+  public static void main(String[] args) throws FileNotFoundException {
+        String s = choose(new File("README.TXT"));
+        System.out.println(s);
+     }
+
+     
+  
+
   public static String choose(File f) throws FileNotFoundException
   {
      String result = null;

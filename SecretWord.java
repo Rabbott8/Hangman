@@ -1,10 +1,11 @@
 import java.io.*;
 import java.util.*;
 /**
- * Write a description of class SecretWord here.
+ * This class creates an instance of a secret word, containing the word and necessary methods/instance
+ * variables for the user to interact and guess the secret word
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Ryan Abbott 
+ * 
  */
 public class SecretWord
 {
@@ -14,9 +15,9 @@ public class SecretWord
      * Constructor for objects of class SecretWord. Adds each letter in a randomly chosen string from
      * a text file to an ArrayList. Also intializes each position in isFull to false
      */
-    public SecretWord() throws FileNotFoundException
+    public SecretWord()
     {
-        String s = FileReader1.choose(new File("README.TXT"));
+        String s = chooser("README.TXT");
         for (int i = 0; i<s.length();i++)
         {
             letters.add(s.substring(i,i+1));
@@ -86,5 +87,10 @@ public class SecretWord
                     }
             }
         return s;
+    }
+    
+    private String chooser(File f)  throws FileNotFoundException
+    {
+        return FileReader1.choose(new File(f));
     }
 }

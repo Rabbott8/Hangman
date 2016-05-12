@@ -23,9 +23,13 @@ public class fgh
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
         hangman c = new hangman();
+
         
-        SecretWord w = new SecretWord();
-      
+       SecretWord w = new SecretWord();
+       
+
+       
+
     }
     }
 

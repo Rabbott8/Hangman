@@ -11,7 +11,7 @@ import javax.swing.*;
  * @author rabbott8
  */
 public class NewJFrame extends JFrame {
-
+   private String str1 = "\n";
     /**
      * Creates new form NewJFrame
      */
@@ -26,7 +26,7 @@ public class NewJFrame extends JFrame {
      */
     public void paint(Graphics g)
     {
-
+        //Post
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
@@ -34,12 +34,30 @@ public class NewJFrame extends JFrame {
         g.fillRect(125,70,5,50);
 
         g.setColor(Color.red);
+
+        //Head
         g.fillOval(100,100,50,50);
+
+        //Body
         g.fillRect(125,125,3,100);
+
+        //arms
         g.drawLine(125,175,160,150);
         g.drawLine(125,175,90,150);
+
+        //Legs
         g.drawLine(126,223,90,250);
         g.drawLine(126,223,160,250);
+
+        //Eyes
+        g.setColor(Color.black);
+        g.drawLine(110,115,120,125);
+        g.drawLine(120,115,110,125);
+        g.drawLine(130,115,140,125);
+        g.drawLine(140,115,130,125);
+
+        //Mouth
+        g.drawArc(110,135,30,12,0,180);
     }
 
     /**
@@ -81,12 +99,7 @@ public class NewJFrame extends JFrame {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("A");
-        jButton1.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent evt) {
-                    buttonAction("a");
-                }
-            });
+        
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -98,81 +111,219 @@ public class NewJFrame extends JFrame {
             jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 250, Short.MAX_VALUE)
         );
-
+        jButton1.setText("A");
+        jButton1.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent evt) {
+                    buttonAction("a");
+                    
+                }
+            });
         jButton3.setText("B");
         jButton3.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent evt) {
-                    buttonAction();
+                    buttonAction("b");
                 }
             });
 
         jButton4.setText("C");
-            jButton4.addActionListener(new ActionListener(){
-                public void actionPerformed(ActionEvent evt) {
-                    buttonAction("a");
+        jButton4.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("c");
                 }
             });
         jButton5.setText("G");
-
+        jButton4.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("g");
+                }
+            });
         jButton6.setText("F");
-
+        jButton6.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("f");
+                }
+            });
         jButton7.setText("E");
-
+        jButton7.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("e");
+                }
+            });
         jButton2.setText("D");
-        jButton2.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent evt) {
-                    
+        jButton2.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                       buttonAction("d");
                 }
             });
 
         jButton8.setText("H");
-
+        jButton8.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("h");
+                }
+            });
         jButton9.setText("I");
-
+        jButton9.addActionListener(new ActionListener()
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("i");
+                }
+            });
         jButton10.setText("J");
-        jButton10.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent evt) {
-                    
+        jButton10.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("j");
                 }
             });
 
         jButton11.setText("K");
-        jButton11.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent evt) {
-                    
+        jButton11.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("k");
                 }
             });
 
         jButton12.setText("L");
+        jButton12.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("l");
+                }
+            });
 
         jButton13.setText("M");
+        jButton13.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("m");
+                }
+            });
 
         jButton14.setText("N");
+        jButton14.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("n");
+                }
+            });
 
         jButton15.setText("W");
+        jButton15.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("w");
+                }
+            });
 
         jButton16.setText("R");
-
+        jButton16.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("r");
+                }
+            });
         jButton18.setText("O");
-
+        jButton18.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("o");
+                }
+            });
         jButton19.setText("P");
-
+        jButton19.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("p");
+                }
+            });
         jButton20.setText("X");
-
+        jButton20.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("x");
+                }
+            });
         jButton21.setText("Z");
-
+        jButton21.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("z");
+                }
+            });
         jButton22.setText("Y");
-
+        jButton22.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("y");
+                }
+            });
         jButton23.setText("Q");
-
+        jButton23.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("q");
+                }
+            });
         jButton25.setText("V");
-
+        jButton25.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("v");
+                }
+            });
         jButton26.setText("U");
-
+        jButton26.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("u");
+                }
+            });
         jButton24.setText("S");
-
+        jButton24.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("s");
+                }
+            });
         jButton17.setText("T");
-
+        jButton17.addActionListener(new ActionListener() 
+        {
+                public void actionPerformed(ActionEvent evt) 
+                {
+                    buttonAction("t");
+                }
+            });
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -285,16 +436,16 @@ public class NewJFrame extends JFrame {
         pack();
     }// </editor-fold>                        
 
-
-        public String buttonAction(String str){
-            return str;
-        }
+    public String buttonAction(String str){
+        str1 = str;
+        return str;
+        
+    }
+    public String getString(){
+        return str1;
+    }
        
-       
-       
-                
             
-   
     // Variables declaration - do not modify                     
     private JButton jButton1;
     private JButton jButton10;
