@@ -23,7 +23,7 @@ public class fgh
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
         hangman c = new hangman();
-      
+       System.out.println(dogescreaming.getString());
     }
     }
 
