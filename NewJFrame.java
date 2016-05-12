@@ -26,20 +26,37 @@ public class NewJFrame extends JFrame {
      */
     public void paint(Graphics g)
     {
-
+//Post
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
         g.fillRect(75,70,75,5);
         g.fillRect(125,70,5,50);
-
+       
         g.setColor(Color.red);
+        //Head
         g.fillOval(100,100,50,50);
+        
+        //Body
         g.fillRect(125,125,3,100);
+        
+        //arms
         g.drawLine(125,175,160,150);
         g.drawLine(125,175,90,150);
+        
+        //Legs
         g.drawLine(126,223,90,250);
         g.drawLine(126,223,160,250);
+        
+        //Eyes
+        g.setColor(Color.black);
+        g.drawLine(110,115,120,125);
+        g.drawLine(120,115,110,125);
+        g.drawLine(130,115,140,125);
+        g.drawLine(140,115,130,125);
+        
+        //Mouth
+        g.drawArc(110,135,30,12,0,180);
     }
 
     /**
@@ -102,7 +119,7 @@ public class NewJFrame extends JFrame {
         jButton3.setText("B");
         jButton3.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent evt) {
-                    buttonAction();
+                    buttonAction("b");
                 }
             });
 
