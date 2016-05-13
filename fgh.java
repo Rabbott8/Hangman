@@ -22,7 +22,7 @@ public class fgh
                     NewJFrame dogescreaming = new NewJFrame();
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
-       
+        
 
         
        SecretWord w = new SecretWord();
