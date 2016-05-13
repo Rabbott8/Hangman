@@ -3,7 +3,7 @@ import java.util.*;
 
 public class FileReader1 {
 
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args)  {
         String s = choose(new File("README.TXT"));
         System.out.println(s);
      }
@@ -11,11 +11,14 @@ public class FileReader1 {
      
   
 
-  public static String choose(File f) throws FileNotFoundException
+  public static String choose(File f) 
   {
      String result = null;
      Random rand = new Random();
      int n = 0;
+     
+     try{
+     
      for(Scanner sc = new Scanner(f); sc.hasNext(); )
      {
         ++n;
@@ -24,6 +27,14 @@ public class FileReader1 {
            result = line;         
      }
 
-     return result;      
+     
+    }   
+    
+    catch ( java.io.FileNotFoundException e)
+        {
+            result = null;
+        }
+        
+    return result;
   }
 }
