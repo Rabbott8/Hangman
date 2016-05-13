@@ -15,9 +15,9 @@ public class SecretWord
      * Constructor for objects of class SecretWord. Adds each letter in a randomly chosen string from
      * a text file to an ArrayList. Also intializes each position in isFull to false
      */
-    public SecretWord()
+    public SecretWord() throws FileNotFoundException
     {
-        String s = chooser("README.TXT");
+        String s = FileReader1.choose(new File("README.TXT"));
         for (int i = 0; i<s.length();i++)
         {
             letters.add(s.substring(i,i+1));
@@ -91,6 +91,6 @@ public class SecretWord
     
     private String chooser(File f)  throws FileNotFoundException
     {
-        return FileReader1.choose(new File(f));
+        return null;//FileReader1.choose(new File(f));
     }
 }
