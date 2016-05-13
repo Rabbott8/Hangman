@@ -6,18 +6,26 @@ import java.util.*;
  * 
  * @Ryan Abbott 
  * 
+ * I recieved some assistance from Matthew on opening and reading the file dealing with throwing, catching, and
+ * trying exceptions
+ * 
  */
 public class SecretWord
 {
-    ArrayList<String> letters = new ArrayList<String>();
-    ArrayList<Boolean> isFull = new ArrayList<Boolean>();
+    private ArrayList<String> letters = new ArrayList<String>();
+    private ArrayList<Boolean> isFull = new ArrayList<Boolean>();
+    //private File f = new File("README.TXT");
+    //private String s = chooser(f) //throws FileNotFoundException;
     /**
      * Constructor for objects of class SecretWord. Adds each letter in a randomly chosen string from
      * a text file to an ArrayList. Also intializes each position in isFull to false
      */
-    public SecretWord()
+    public SecretWord() 
     {
-        String s = chooser("README.TXT");
+        
+        File f = new File("README.TXT");
+        
+        String s = chooser(f);
         for (int i = 0; i<s.length();i++)
         {
             letters.add(s.substring(i,i+1));
@@ -89,8 +97,8 @@ public class SecretWord
         return s;
     }
     
-    private String chooser(File f)  throws FileNotFoundException
+    private String chooser(File f)  
     {
-        return FileReader1.choose(new File(f));
+        return FileReader1.choose(f);
     }
 }
