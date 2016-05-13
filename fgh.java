@@ -27,8 +27,15 @@ public class fgh
         
        SecretWord w = new SecretWord();
        
-
        
+       System.out.print(w);
+       
+       w.isLetter("e");
+       w.isLetter("i");
+       w.isLetter("a");
+       w.isLetter("o");
+
+       System.out.print(w);
 
     }
     }
