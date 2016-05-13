@@ -11,7 +11,11 @@ import javax.swing.*;
  * @author rabbott8
  */
 public class NewJFrame extends JFrame {
-   private String str1 = "\n";
+   private String str1 = "";
+   private int x =150;
+   private int y = 0;
+   private int z=150;
+   private String str2 = "doge";
     /**
      * Creates new form NewJFrame
      */
@@ -26,7 +30,8 @@ public class NewJFrame extends JFrame {
      */
     public void paint(Graphics g)
     {
-        //Post
+        
+        while(y<2){
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
@@ -58,7 +63,23 @@ public class NewJFrame extends JFrame {
 
         //Mouth
         g.drawArc(110,135,30,12,0,180);
+        y+=2;
     }
+        
+        //string
+       
+           g.setFont(new Font("TimesNewRoman", Font.BOLD, 30));
+            g.drawString(str1,x,z);
+            
+         x+=40;
+         if (x>=700)
+         {
+             x=190;
+             z+=50;
+            }
+        
+    
+}
 
     /**
     * This method is called from within the constructor to initialize the form.
@@ -134,7 +155,7 @@ public class NewJFrame extends JFrame {
                 }
             });
         jButton5.setText("G");
-        jButton4.addActionListener(new ActionListener()
+        jButton5.addActionListener(new ActionListener()
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
@@ -438,10 +459,14 @@ public class NewJFrame extends JFrame {
 
     public String buttonAction(String str){
         str1 = str;
+        repaint();
+          
+        
         return str;
         
     }
     public String getString(){
+       
         return str1;
     }
        
