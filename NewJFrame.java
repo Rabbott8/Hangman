@@ -81,7 +81,7 @@ public class NewJFrame extends JFrame {
              z+=50;
             }
         int c = num;
-        num = 5;
+        //num = 5;
         while(num>0){g.drawLine(a,b,a+50,b);
         a+=70;
         if (a>=690)
