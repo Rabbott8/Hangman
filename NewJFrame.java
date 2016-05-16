@@ -15,6 +15,9 @@ public class NewJFrame extends JFrame {
    private int x =150;
    private int y = 0;
    private int z=150;
+   private int a = 200;
+   private int b = 360;
+   private static int num = 0;
    private String str2 = "doge";
     /**
      * Creates new form NewJFrame
@@ -77,8 +80,17 @@ public class NewJFrame extends JFrame {
              x=190;
              z+=50;
             }
-        
-    
+        int c = num;
+        num = 5;
+        while(num>0){g.drawLine(a,b,a+50,b);
+        a+=70;
+        if (a>=690)
+            {
+                a = 200;
+                b = 410;
+                num--;
+            }}
+       num = c;
 }
 
     /**
@@ -456,7 +468,12 @@ public class NewJFrame extends JFrame {
 
         pack();
     }// </editor-fold>                        
-
+    
+    public static void numSpaces(int i)
+    {
+        num = i;
+    }
+    
     public String buttonAction(String str){
         str1 = str;
         repaint();

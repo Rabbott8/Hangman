@@ -45,6 +45,7 @@ public class SecretWord
      * Will check to see if string parameter is present in the SecretWord.
      * Returns an ArrayList<Integer> of the indexes of the string, null if the string is not present
      * Sets the corresponding position in isFull to true if string is present
+     * Precondition: String s is only one index
      */
     public ArrayList<Integer> isLetter(String s)
     {
@@ -62,6 +63,13 @@ public class SecretWord
             return null;
         else
             return indexes;
+    }
+    /**
+     * This method returns the number of letters in the string
+     */
+    public int numLetters()
+    {
+        return letters.size();
     }
     
     /**

@@ -22,11 +22,13 @@ public class fgh
                     NewJFrame dogescreaming = new NewJFrame();
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
-        
-
+       
+                    
         
        SecretWord w = new SecretWord();
        
+       NewJFrame.numSpaces(w.numLetters());
+       System.out.print(w.numLetters());
        
        System.out.print(w);
        
@@ -36,7 +38,9 @@ public class fgh
        w.isLetter("o");
 
        System.out.print(w);
-
+       
+       
+       
     }
     }
 
