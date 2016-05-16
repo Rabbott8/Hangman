@@ -19,11 +19,16 @@ public class NewJFrame extends JFrame {
    private int b = 360;
    private static int num = 0;
    private String str2 = "doge";
+   private String name =System.getProperty("user.name");
+   private String ios9 = System.getProperty("os.name");
     /**
      * Creates new form NewJFrame
      */
     public NewJFrame() {
         initComponents();
+        
+        
+       
     }
 
     /**
@@ -33,7 +38,8 @@ public class NewJFrame extends JFrame {
      */
     public void paint(Graphics g)
     {
-        
+         g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
+          g.drawString(name +"-" + ios9, 250, 50);
         while(y<2){
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);

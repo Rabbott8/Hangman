@@ -22,9 +22,9 @@ public class fgh
                     NewJFrame dogescreaming = new NewJFrame();
                     dogescreaming.setVisible(true);
                     dogescreaming.setResizable(false);
-       
-                    
-        
+                    dogescreaming.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                   Sound doge = new Sound();
+                   doge.play();
        SecretWord w = new SecretWord();
        
        NewJFrame.numSpaces(w.numLetters());
