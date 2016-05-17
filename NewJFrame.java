@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.ArrayList;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -18,6 +19,8 @@ public class NewJFrame extends JFrame {
    private int a = 200;
    private int b = 360;
    private static int num = 0;
+   private static SecretWord thiarr = null;
+   private static ArrayList<Integer> guy = null;
    private String str2 = "doge";
    private String name =System.getProperty("user.name");
    private String ios9 = System.getProperty("os.name");
@@ -78,24 +81,41 @@ public class NewJFrame extends JFrame {
         //string
        
            g.setFont(new Font("TimesNewRoman", Font.BOLD, 30));
-            g.drawString(str1,x,z);
             
-         x+=40;
-         if (x>=700)
-         {
-             x=190;
-             z+=50;
-            }
+            
+         //x+=40;
+         //if (x>=700)
+        // {
+          //   x=190;
+          //   z+=50;
+         //   }
         int c = num;
         //num = 5;
         while(num>0){g.drawLine(a,b,a+50,b);
-        a+=70;
+            int n = 0;
+            
+            if (guy!= null)
+            {
+                for (int y = 0;y<guy.size();y++){
+                    if(guy.get(y)>6){
+                        y-=7;
+                    }
+                g.drawString(str1,215+(70^(guy.get(y))),360+((guy.get(y)/*/7*/)*50));}
+            }
+            a+=70;
+        
         if (a>=690)
             {
                 a = 200;
                 b = 410;
-                num--;
-            }}
+                
+            }
+        num--;
+        n++;
+        
+    }
+       a = 200;
+       b = 360;
        num = c;
 }
 
@@ -480,8 +500,14 @@ public class NewJFrame extends JFrame {
         num = i;
     }
     
+    public static void setArray(SecretWord p)
+    {
+        thiarr = p;
+    }
+    
     public String buttonAction(String str){
         str1 = str;
+        guy = thiarr.isLetter(str);
         repaint();
           
         
