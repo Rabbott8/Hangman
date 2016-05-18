@@ -13,6 +13,7 @@ import javax.swing.*;
  */
 public class NewJFrame extends JFrame {
    private String str1 = "";
+   private int tC = 0;
    private int x =150;
    private int y = 0;
    private int z=150;
@@ -20,7 +21,7 @@ public class NewJFrame extends JFrame {
    private int b = 360;
    private static int num = 0;
    private static SecretWord thiarr = null;
-   private static ArrayList<Integer> guy = null;
+   private static ArrayList<Integer> guy = new ArrayList<Integer>();
    private String str2 = "doge";
    private String name =System.getProperty("user.name");
    private String ios9 = System.getProperty("os.name");
@@ -43,7 +44,7 @@ public class NewJFrame extends JFrame {
     {
          g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
           g.drawString(name +"-" + ios9, 250, 50);
-        while(y<2){
+        
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
@@ -53,19 +54,27 @@ public class NewJFrame extends JFrame {
         g.setColor(Color.red);
 
         //Head
-        g.fillOval(100,100,50,50);
+        if(tC == 0)
+        {g.fillOval(100,100,50,50);
+        }
 
         //Body
-        g.fillRect(125,125,3,100);
+        if(tC == 1){
+        g.fillRect(125,125,3,100);}
 
         //arms
-        g.drawLine(125,175,160,150);
-        g.drawLine(125,175,90,150);
+        if(tC == 2){
+        g.drawLine(125,175,160,150);}
+        if(tC == 3){
+        g.drawLine(125,175,90,150);}
 
         //Legs
-        g.drawLine(126,223,90,250);
-        g.drawLine(126,223,160,250);
-
+        if(tC == 4){
+        g.drawLine(126,223,90,250);}
+        if(tC == 5){
+        g.drawLine(126,223,160,250);}
+        
+        if(tC==6){
         //Eyes
         g.setColor(Color.black);
         g.drawLine(110,115,120,125);
@@ -75,7 +84,7 @@ public class NewJFrame extends JFrame {
 
         //Mouth
         g.drawArc(110,135,30,12,0,180);
-        y+=2;
+        
     }
         
         //string
@@ -91,7 +100,9 @@ public class NewJFrame extends JFrame {
          //   }
         int c = num;
         //num = 5;
-        while(num>0){g.drawLine(a,b,a+50,b);
+        while(num>0){
+            g.setColor(Color.BLACK);
+            g.drawLine(a,b,a+50,b);
             int n = 0;
             
             if (guy!= null)
@@ -101,7 +112,7 @@ public class NewJFrame extends JFrame {
                     if(e>6){
                         e-=7;
                     }
-                g.drawString(str1,220+(70*e),360+((guy.get(y)/7)*50));}
+                g.drawString(str1,220+(70*(e)),360+((guy.get(y)/7)*50));}
             }
             a+=70;
         
@@ -118,6 +129,9 @@ public class NewJFrame extends JFrame {
        a = 200;
        b = 360;
        num = c;
+       if(guy==null )
+       {tC++;}
+       y = 0;
 }
 
     /**
@@ -128,7 +142,9 @@ public class NewJFrame extends JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
-
+        
+        guy.add(0);
+        
         jButton1 = new JButton();
         jPanel1 = new JPanel();
         jButton3 = new JButton();
