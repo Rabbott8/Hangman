@@ -97,10 +97,11 @@ public class NewJFrame extends JFrame {
             if (guy!= null)
             {
                 for (int y = 0;y<guy.size();y++){
-                    if(guy.get(y)>6){
-                        y-=7;
+                    int e = guy.get(y);
+                    if(e>6){
+                        e-=7;
                     }
-                g.drawString(str1,215+(70^(guy.get(y))),360+((guy.get(y)/*/7*/)*50));}
+                g.drawString(str1,220+(70*e),360+((guy.get(y)/7)*50));}
             }
             a+=70;
         
