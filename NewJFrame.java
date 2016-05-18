@@ -44,7 +44,8 @@ public class NewJFrame extends JFrame {
     {
          g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
           g.drawString(name +"-" + ios9, 250, 50);
-        
+        if(guy==null )
+       {tC++;}
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
@@ -129,8 +130,7 @@ public class NewJFrame extends JFrame {
        a = 200;
        b = 360;
        num = c;
-       if(guy==null )
-       {tC++;}
+       
        y = 0;
 }
 
@@ -181,7 +181,7 @@ public class NewJFrame extends JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
