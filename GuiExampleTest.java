@@ -6,14 +6,14 @@ public class GuiExampleTest extends JFrame {
     JButton jbutton = new JButton("Start"); 
 
     public GuiExampleTest() { 
+        String[] p = null;
         setLayout(null); 
         jbutton.setBounds(0, 0, 200, 200); 
         jbutton.setFocusable(true); 
         add(jbutton); 
         jbutton.addActionListener(new ActionListener() { 
                 public void actionPerformed(ActionEvent epa) { 
-                    JFrame start = new JFrame("Game Started"); 
-                    start.setVisible(true); 
+                    fgh.main(p);
                 } 
             }); 
     } 
