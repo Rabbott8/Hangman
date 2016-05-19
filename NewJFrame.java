@@ -47,11 +47,11 @@ public class NewJFrame extends JFrame {
         if(guy==null )
        {tC++;}
        
-        g.setColor(Color.blue);
+        if (tC==0){g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
         g.fillRect(75,70,75,5);
-        g.fillRect(125,70,5,50);
+        g.fillRect(125,70,5,50);}
 
         g.setColor(Color.red);
 
