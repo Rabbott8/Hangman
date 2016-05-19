@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.*;
-
+/*
+ * Help from Matt on catching and trying exceptions
+ * 
+ */
 public class FileReader1 {
 
   public static void main(String[] args)  {
