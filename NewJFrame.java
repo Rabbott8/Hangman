@@ -46,6 +46,7 @@ public class NewJFrame extends JFrame {
           g.drawString(name +"-" + ios9, 250, 50);
         if(guy==null )
        {tC++;}
+       
         g.setColor(Color.blue);
         g.fillRect(50,300,40,10);
         g.fillRect(75,70,5,232);
@@ -55,27 +56,27 @@ public class NewJFrame extends JFrame {
         g.setColor(Color.red);
 
         //Head
-        if(tC == 0)
+        if(tC == 1)
         {g.fillOval(100,100,50,50);
         }
 
         //Body
-        if(tC == 1){
+        if(tC == 2){
         g.fillRect(125,125,3,100);}
 
         //arms
-        if(tC == 2){
-        g.drawLine(125,175,160,150);}
         if(tC == 3){
+        g.drawLine(125,175,160,150);}
+        if(tC == 4){
         g.drawLine(125,175,90,150);}
 
         //Legs
-        if(tC == 4){
-        g.drawLine(126,223,90,250);}
         if(tC == 5){
+        g.drawLine(126,223,90,250);}
+        if(tC == 6){
         g.drawLine(126,223,160,250);}
         
-        if(tC==6){
+        if(tC==7){
         //Eyes
         g.setColor(Color.black);
         g.drawLine(110,115,120,125);
