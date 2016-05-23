@@ -24,7 +24,7 @@ physician
 episode
 exertion
 wholesaler
-vigour
+vigor
 ominous
 perpetual
 sphynx
