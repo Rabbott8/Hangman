@@ -25,6 +25,7 @@ public class NewJFrame extends JFrame {
    private String str2 = "doge";
    private String name =System.getProperty("user.name");
    private String ios9 = System.getProperty("os.name");
+   private int ctr  = 1001;
     /**
      * Creates new form NewJFrame
      */
@@ -44,6 +45,8 @@ public class NewJFrame extends JFrame {
     {
          g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
           g.drawString(name +"-" + ios9, 250, 50);
+          g.setFont(new Font("Impact", Font.BOLD, 20));
+          g.drawString("Hover Over The Letters To See Which Has Been Clicked" ,250,100);
         if(guy==null )
        {tC++;}
        
@@ -54,7 +57,7 @@ public class NewJFrame extends JFrame {
         g.fillRect(125,70,5,50);}
 
         g.setColor(Color.red);
-
+        
         //Head
         if(tC == 1)
         {g.fillOval(100,100,50,50);
@@ -191,13 +194,14 @@ public class NewJFrame extends JFrame {
         jButton1.setText("A");
         jButton1.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent evt) {
+                    jButton1.setToolTipText("You have Used this Letter");
                     buttonAction("a");
-                    
                 }
             });
         jButton3.setText("B");
         jButton3.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent evt) {
+                    jButton3.setToolTipText("You have Used this Letter");
                     buttonAction("b");
                 }
             });
@@ -207,6 +211,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton4.setToolTipText("You have Used this Letter");
                     buttonAction("c");
                 }
             });
@@ -215,6 +220,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton5.setToolTipText("You have Used this Letter");
                     buttonAction("g");
                 }
             });
@@ -223,6 +229,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton6.setToolTipText("You have Used this Letter");
                     buttonAction("f");
                 }
             });
@@ -231,6 +238,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton7.setToolTipText("You have Used this Letter");
                     buttonAction("e");
                 }
             });
@@ -239,6 +247,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton2.setToolTipText("You have Used this Letter");
                        buttonAction("d");
                 }
             });
@@ -248,7 +257,9 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton8.setToolTipText("You have Used this Letter");
                     buttonAction("h");
+                  
                 }
             });
         jButton9.setText("I");
@@ -256,6 +267,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton9.setToolTipText("You have Used this Letter");
                     buttonAction("i");
                 }
             });
@@ -264,6 +276,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton10.setToolTipText("You have Used this Letter");
                     buttonAction("j");
                 }
             });
@@ -273,6 +286,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton11.setToolTipText("You have Used this Letter");
                     buttonAction("k");
                 }
             });
@@ -282,6 +296,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton12.setToolTipText("You have Used this Letter");
                     buttonAction("l");
                 }
             });
@@ -291,6 +306,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton13.setToolTipText("You have Used this Letter");
                     buttonAction("m");
                 }
             });
@@ -300,6 +316,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton14.setToolTipText("You have Used this Letter");
                     buttonAction("n");
                 }
             });
@@ -309,6 +326,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton15.setToolTipText("You have Used this Letter");
                     buttonAction("w");
                 }
             });
@@ -318,6 +336,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton16.setToolTipText("You have Used this Letter");
                     buttonAction("r");
                 }
             });
@@ -326,6 +345,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton18.setToolTipText("You have Used this Letter");
                     buttonAction("o");
                 }
             });
@@ -334,6 +354,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton19.setToolTipText("You have Used this Letter");
                     buttonAction("p");
                 }
             });
@@ -342,6 +363,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton20.setToolTipText("You have Used this Letter");
                     buttonAction("x");
                 }
             });
@@ -350,6 +372,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton21.setToolTipText("You have Used this Letter");
                     buttonAction("z");
                 }
             });
@@ -358,6 +381,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton22.setToolTipText("You have Used this Letter");
                     buttonAction("y");
                 }
             });
@@ -366,6 +390,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton23.setToolTipText("You have Used this Letter");
                     buttonAction("q");
                 }
             });
@@ -374,6 +399,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton25.setToolTipText("You have Used this Letter");
                     buttonAction("v");
                 }
             });
@@ -382,6 +408,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton26.setToolTipText("You have Used this Letter");
                     buttonAction("u");
                 }
             });
@@ -390,6 +417,7 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton24.setToolTipText("You have Used this Letter");
                     buttonAction("s");
                 }
             });
@@ -398,7 +426,9 @@ public class NewJFrame extends JFrame {
         {
                 public void actionPerformed(ActionEvent evt) 
                 {
+                    jButton17.setToolTipText("You have Used this Letter");
                     buttonAction("t");
+                    
                 }
             });
         GroupLayout layout = new GroupLayout(getContentPane());
@@ -526,6 +556,7 @@ public class NewJFrame extends JFrame {
     public String buttonAction(String str){
         str1 = str;
         guy = thiarr.isLetter(str);
+        
         repaint();
           
         
@@ -566,5 +597,6 @@ public class NewJFrame extends JFrame {
     private JButton jButton8;
     private JButton jButton9;
     private JPanel jPanel1;
+   
     // End of variables declaration                   
 }
