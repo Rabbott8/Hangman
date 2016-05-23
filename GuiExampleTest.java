@@ -15,7 +15,17 @@ public class GuiExampleTest extends JFrame {
                 public void actionPerformed(ActionEvent epa) { 
                     fgh.main(p);
                 } 
-            }); 
+  }); 
+  jbutton.setToolTipText("Press to Start the Epic Game");
+        jbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+    public void mouseEntered(java.awt.event.MouseEvent evt) {
+        jbutton.setBackground(Color.GREEN);
+    }
+
+    public void mouseExited(java.awt.event.MouseEvent evt) {
+        jbutton.setBackground(UIManager.getColor("control"));
+    }
+});
     } 
 
     public static void main(String[] args) { 
@@ -24,4 +34,6 @@ public class GuiExampleTest extends JFrame {
         sl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         sl.setVisible(true); 
     } 
+    
 } 
+
