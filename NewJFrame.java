@@ -151,6 +151,7 @@ public class NewJFrame extends JFrame {
 
         jButton1 = new JButton();
         jPanel1 = new JPanel();
+        jPanel1.setPreferredSize(new Dimension(700,300));
         jButton3 = new JButton();
         jButton4 = new JButton();
         jButton5 = new JButton();

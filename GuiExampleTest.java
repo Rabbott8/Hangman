@@ -19,7 +19,7 @@ public class GuiExampleTest extends JFrame {
   jbutton.setToolTipText("Press to Start the Epic Game");
         jbutton.addMouseListener(new java.awt.event.MouseAdapter() {
     public void mouseEntered(java.awt.event.MouseEvent evt) {
-        jbutton.setBackground(Color.GREEN);
+        jbutton.setBackground(Color.BLUE);
     }
 
     public void mouseExited(java.awt.event.MouseEvent evt) {
