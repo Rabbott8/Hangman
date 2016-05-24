@@ -45,7 +45,11 @@ public class NewJFrame extends JFrame {
     public void paint(Graphics g)
     {
         g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
+        
+        g.drawString("Made by Vikram, Ryan, Dylan, and Allen", 0,50);
         g.drawString(name +"-" + ios9, 250, 50);
+        g.setColor(Color.RED);
+        
         g.setFont(new Font("Impact", Font.BOLD, 20));
         g.drawString("Hover Over The Letters To See Which Has Been Clicked" ,250,100);
         if(guy==null && check)

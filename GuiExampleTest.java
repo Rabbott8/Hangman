@@ -30,9 +30,10 @@ public class GuiExampleTest extends JFrame {
 
     public static void main(String[] args) { 
         GuiExampleTest sl = new GuiExampleTest(); 
-        sl.setSize(300, 300); 
+        sl.setSize(200, 200); 
         sl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         sl.setVisible(true); 
+        sl.setResizable(false);
     } 
     
 } 
