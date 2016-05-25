@@ -1,9 +1,11 @@
 
 /**
- * Reads README.TXT file and prints out all the words in the file
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Reads and prints text from a file
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
+
  */
 import java.io.*;
 import java.io.BufferedReader;
