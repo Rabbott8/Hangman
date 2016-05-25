@@ -3,10 +3,12 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * Write a description of class fgh here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Runner Class that calls JFrame and Sound; Also initializes variables
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
+
  */
 public class fgh
 {
