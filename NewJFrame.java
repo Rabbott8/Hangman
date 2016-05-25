@@ -35,9 +35,7 @@ public class NewJFrame extends JFrame {
     public NewJFrame() {
         initComponents();
 
-       
     }
-
     /**
      * Paint method for applet.
      * 
@@ -47,17 +45,17 @@ public class NewJFrame extends JFrame {
     public void paint(Graphics g)
     {
         g.setFont(new Font("TimesNewRoman", Font.BOLD, 10));
-        
+
         g.drawString("Made by Vikram, Ryan, Dylan, and Allen", 0,50);
         g.drawString(name +"-" + ios9, 250, 50);
         g.setColor(Color.RED);
-        
+
         g.setFont(new Font("Impact", Font.BOLD, 20));
         g.drawString("Hover Over The Letters To See Which Has Been Clicked" ,250,100);
-        
+
         /**
-     * Creates the Hangman
-     */
+         * Creates the Hangman
+         */
         if(guy==null && check)
         {tC++;}
 
@@ -101,7 +99,7 @@ public class NewJFrame extends JFrame {
             //Mouth
             g.drawArc(110,135,30,12,0,180);
             g.setFont(new Font("Impact", Font.BOLD, 40));
-           g.drawString("You Lose!", 250,250);
+            g.drawString("You Lose!", 250,250);
         }
 
         //string
@@ -150,8 +148,8 @@ public class NewJFrame extends JFrame {
     }
 
     /**
-     * Creates 26 buttons
-     */
+    * Creates 26 buttons
+    */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
@@ -188,7 +186,6 @@ public class NewJFrame extends JFrame {
         jButton17 = new JButton();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -551,7 +548,7 @@ public class NewJFrame extends JFrame {
 
         pack();
     }// </editor-fold>                        
-/**
+    /**
      * Actions for all the buttons here
      */
     public static void numSpaces(int i)
@@ -582,6 +579,7 @@ public class NewJFrame extends JFrame {
 
         return str;
     }
+
     public String getString(){
         return str1;
     }
