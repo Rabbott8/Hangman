@@ -4,11 +4,13 @@ import java.util.*;
  * This class creates an instance of a secret word, containing the word and necessary methods/instance
  * variables for the user to interact and guess the secret word
  * 
- * @Ryan Abbott 
  * 
  * I recieved some assistance from Matthew on opening and reading the file dealing with throwing, catching, and
  * trying exceptions
- * 
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
  */
 public class SecretWord
 {
