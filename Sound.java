@@ -2,7 +2,13 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import java.io.File;
-
+/**
+ * Provides music in the background of the Jframe
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
+ */
 public class Sound{
     private AudioInputStream dogescreaming;
     private Clip mainClip;
