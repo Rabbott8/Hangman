@@ -3,12 +3,13 @@ import java.awt.*;
 import javax.swing.*;
 
 /**
- * Class hangman - write a description of the class here
+ * This class was the test for creating the hangman 
  * 
- * @author (your name) 
- * @version (a version number)
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
  */
-///<<<<<<< HEAD
 public class hangman extends JApplet
 {
     // instance variables - replace the example below with your own
