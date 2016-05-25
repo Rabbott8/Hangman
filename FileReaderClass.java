@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class FileReader here.
+ * Reads README.TXT file and prints out all the words in the file
  * 
  * @author (your name) 
  * @version (a version number or a date)
