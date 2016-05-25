@@ -1,17 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 import java.util.ArrayList;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 /**
- *
+ *This class creates all the buttons and has the paint method that draws the hangman
  * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
  * 
- */
+ * 
+ */ 
 public class NewJFrame extends JFrame {
     private String str1 = "";
     private int tC = 0;
