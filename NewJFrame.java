@@ -4,7 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 /**
- *This class creates all the buttons and has the paint method that draws the hangman
+ * This class creates all the buttons and has the paint method that draws the hangman. The pseuo-runner, this is the
+ * bulk of the program
  * @author rabbott8
  * @author vthanig8
  * @author dtarson8
@@ -548,6 +549,7 @@ public class NewJFrame extends JFrame {
 
         pack();
     }// </editor-fold>                        
+    
     /**
      * Actions for all the buttons here
      */
@@ -555,12 +557,18 @@ public class NewJFrame extends JFrame {
     {
         num = i;
     }
-
+    /**
+     * Places the secret word in the class
+     */
     public static void setArray(SecretWord p)
     {
         thiarr = p;
     }
-
+    /**
+     * Method for processing a button pressed. Calls paint method, checks if letter is in word, and makes sure a
+     * letter is not being used more than once
+     * 
+     */
     public String buttonAction(String str){
         str1 = str;
         guy = thiarr.isLetter(str);
