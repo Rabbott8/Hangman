@@ -1,8 +1,12 @@
 import java.io.*;
 import java.util.*;
-/*
+/**
  * Help from Matt on catching and trying exceptions
- * 
+ * Reads text from a file and randomly chooses a string and prints it.
+ * @author rabbott8
+ * @author vthanig8
+ * @author dtarson8
+ * @author akunche8
  */
 public class FileReader1 {
 
