@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 /**
- * This class creates all the buttons and has the paint method that draws the hangman. The pseuo-runner, this is the
+ * This class creates all the buttons and has the paint method that draws the hangman. The pseudo-runner, this is the
  * bulk of the program
  * @author rabbott8
  * @author vthanig8
@@ -29,7 +29,7 @@ public class NewJFrame extends JFrame {
     private String str2 = "doge";
     private String name =System.getProperty("user.name");
     private String ios9 = System.getProperty("os.name");
-    private int ctr  = 1001;
+
     /**
      * Creates new form NewJFrame
      */
@@ -42,6 +42,7 @@ public class NewJFrame extends JFrame {
      * 
      * Creates the Introduction of the JFrame
      * 
+     * Handles much of the processing for the graphics
      */
     public void paint(Graphics g)
     {
@@ -99,8 +100,11 @@ public class NewJFrame extends JFrame {
 
             //Mouth
             g.drawArc(110,135,30,12,0,180);
+            
+            //Lose
             g.setFont(new Font("Impact", Font.BOLD, 40));
             g.drawString("You Lose!", 250,250);
+            
         }
 
         //string
@@ -146,6 +150,13 @@ public class NewJFrame extends JFrame {
         num = c;
         check = true;
         y = 0;
+        
+        if(thiarr.isComplete())
+            {
+                 g.setFont(new Font("Impact", Font.BOLD, 40));
+                 g.drawString("You Win!", 250,250);
+                 
+            }
     }
 
     /**
@@ -567,7 +578,6 @@ public class NewJFrame extends JFrame {
     /**
      * Method for processing a button pressed. Calls paint method, checks if letter is in word, and makes sure a
      * letter is not being used more than once
-     * 
      */
     public String buttonAction(String str){
         str1 = str;
@@ -587,7 +597,7 @@ public class NewJFrame extends JFrame {
 
         return str;
     }
-
+    
     public String getString(){
         return str1;
     }
