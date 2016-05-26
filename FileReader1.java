@@ -3,6 +3,7 @@ import java.util.*;
 /**
  * Help from Matt on catching and trying exceptions
  * Reads text from a file and randomly chooses a string and prints it.
+ * Precondition: text is only one word
  * @author rabbott8
  * @author vthanig8
  * @author dtarson8
@@ -17,7 +18,11 @@ public class FileReader1 {
 
      
   
-
+  /**
+   * Paramters: File f
+   * This method takes a file and chooses a random word from one line of the file, then returns the
+   * string
+   */
   public static String choose(File f) 
   {
      String result = null;
