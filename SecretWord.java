@@ -19,8 +19,9 @@ public class SecretWord
     //private File f = new File("README.TXT");
     //private String s = chooser(f) //throws FileNotFoundException;
     /**
-     * Constructor for objects of class SecretWord. Adds each letter in a randomly chosen string from
-     * a text file to an ArrayList. Also intializes each position in isFull to false
+     * Constructor for objects of class SecretWord.
+     * Adds each letter in a randomly chosen string from a text file to an ArrayList.
+     * Also intializes each position in isFull to false.
      */
     public SecretWord() 
     {
@@ -36,7 +37,7 @@ public class SecretWord
     }
     
     /**
-     * Returns the ArrayList form of the word; this will contain ALL letters, unlike toString
+     * Returns the ArrayList form of the word; this will contain ALL letters, unlike toString.
      */
     public ArrayList<String> getLetters()
     {
@@ -45,8 +46,8 @@ public class SecretWord
     
     /**
      * Will check to see if string parameter is present in the SecretWord.
-     * Returns an ArrayList<Integer> of the indexes of the string, null if the string is not present
-     * Sets the corresponding position in isFull to true if string is present
+     * Returns an ArrayList<Integer> of the indexes of the string, null if the string is not present.
+     * Sets the corresponding position in isFull to true if string is present.
      * Precondition: String s is only one index
      */
     public ArrayList<Integer> isLetter(String s)
@@ -66,8 +67,9 @@ public class SecretWord
         else
             return indexes;
     }
+    
     /**
-     * This method returns the number of letters in the string
+     * This method returns the number of letters in the string.
      */
     public int numLetters()
     {
@@ -75,8 +77,8 @@ public class SecretWord
     }
     
     /**
-     * This method will check if the word has been completely guessed
-     * Returns true if complete, false if not
+     * This method will check if the word has been completely guessed.
+     * Returns true if complete, false if not.
      */
     public boolean isComplete()
     {
@@ -87,8 +89,8 @@ public class SecretWord
     }
     
     /**
-     * toString method, returns completed word so far
-     * Concatenates letter if it has been correctly guessed, otherwise concatenates "_"
+     * toString method, returns completed word so far.
+     * Concatenates letter if it has been correctly guessed, otherwise concatenates "_".
      */
     public String toString()
     {
